@@ -1,6 +1,5 @@
 # Ejercicios Aplicaciones Web
 
+Sylas
 
-AntonioRecio09
-
-Curso 2024 - 2025
+Curso: SMR-2 best class in the world

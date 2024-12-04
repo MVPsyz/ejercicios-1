@@ -1,0 +1,78 @@
+*{
+    background-color: ghostwhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    font-size: large;
+}
+
+#contenedor{
+    width: 80%;
+    margin:auto;
+    text-align: left;
+}
+
+#cabecera{
+    position: fixed;
+    top: 0%;
+    width: 80%;
+    height: 20% ;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(/images/goya.jpg);
+    background-size: cover;
+    color: black;
+}
+
+h1, h2 {
+    text-align: center;
+    background-color: transparent;
+}
+
+li{
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    background-color: lightgrey;
+}
+
+#cuerpo{
+    position: fixed;
+    top: 25%;
+
+    margin-left: 0%;
+    padding-left: 1%;
+
+    width: 80%;
+    height: 62%;
+
+    overflow: hidden;
+}
+
+.pagina{
+    height: 100%;
+    overflow: auto;
+}
+
+#pie{
+    position: fixed;
+    top: 90%;
+    width: 80%0;
+    overflow: hidden;
+
+}
+
+.ceontrado{
+    margin: auto;
+    display: block;
+    
+}

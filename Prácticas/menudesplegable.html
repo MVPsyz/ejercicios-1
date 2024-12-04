@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Desplegable Simple</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Fondo claro */
+            padding-top: 60px; /* Espacio para la barra fija */
+        }
+
+        /* Barra principal */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Menú */
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        ul li {
+            position: relative;
+            margin: 0 20px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            font-size: 1rem;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        ul li a:hover {
+            background-color: #555;
+        }
+
+        /* Menú desplegable */
+        ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            padding: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            min-width: 150px;
+        }
+
+        ul li:hover ul {
+            display: block;
+        }
+
+        ul li ul li a {
+            padding: 10px 20px;
+            font-size: 0.9rem;
+        }
+
+        ul li ul li a:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación principal -->
+    <header>
+        <div class="logo">Mi Web</div>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li>
+                <a href="#">Servicios</a>
+                <ul>
+                    <li><a href="#">Consultoría</a></li>
+                    <li><a href="#">Desarrollo Web</a></li>
+                    <li><a href="#">SEO</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Sobre Nosotros</a>
+                <ul>
+                    <li><a href="#">Quiénes Somos</a></li>
+                    <li><a href="#">Historia</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </header>
+
+</body>
+</html>

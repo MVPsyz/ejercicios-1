@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="/Prácticas/Math_quizz/index.css" rel="stylesheet">
-    <script src="/ejercicios/Prácticas/Math-quizz/index.js"></script>
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="todito">
-
-        <div class="timer">
-            <p>Time Left  <input type="number" name="" id="">  </p>
+    <h1>Math Quiz</h1>
+    <div id="game-container">
+        <div id="quiz">
+            <p>Suma: <span id="sum-op1"></span> + <span id="sum-op2"></span> = 
+                <input type="number" id="sum-answer" onkeyup="checkAnswers()" onchange="checkAnswers()"></p>
+            <p>Resta: <span id="sub-op1"></span> - <span id="sub-op2"></span> = 
+                <input type="number" id="sub-answer" onkeyup="checkAnswers()" onchange="checkAnswers()"></p>
+            <p>Multiplicación: <span id="mul-op1"></span> * <span id="mul-op2"></span> = 
+                <input type="number" id="mul-answer" onkeyup="checkAnswers()" onchange="checkAnswers()"></p>
+            <p>División: <span id="div-op1"></span> ÷ <span id="div-op2"></span> = 
+                <input type="number" id="div-answer" onkeyup="checkAnswers()" onchange="checkAnswers()"></p>
         </div>
-        <div class="operaciones">
-            
-            
+        <div id="timer">Tiempo restante: <span id="time-remaining"></span>s</div>
+        <div id="controls">
+            <button id="start-btn" onclick="start()">Start the Quiz</button>
+            <button id="giveup-btn" onclick="giveUp()" disabled>Give Up</button>
         </div>
-        
+        <div id="message"></div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

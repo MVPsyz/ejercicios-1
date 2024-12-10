@@ -1,17 +1,54 @@
-*{
-    background-color: rgb(245, 245, 245);
-    font-family: Arial;
-    
-
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    color: #333;
 }
 
-.todito {
-    border: 1px solid;
-    border-radius: 20px;
-    padding: 15px;
-    position: relative;
-    left: 40%;
-    right: 40%;
+#game-container {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 600px;
+    background-color: #ffffff;
+}
 
-    margin:auto;
+#quiz p {
+    margin: 10px 0;
+}
+
+input[type="number"] {
+    width: 60px;
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#giveup-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#giveup-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }

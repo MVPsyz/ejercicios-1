@@ -4,28 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Quiz</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Math Quiz</h1>
-    <div id="game-container">
-        <div id="quiz">
-            <p>Suma: <span id="sum-op1"></span> + <span id="sum-op2"></span> = 
-                <input type="number" id="sum-answer" onkeyup="checkAnswers()" onchange="checkAnswers()"></p>
-            <p>Resta: <span id="sub-op1"></span> - <span id="sub-op2"></span> = 
-                <input type="number" id="sub-answer" onkeyup="checkAnswers()" onchange="checkAnswers()"></p>
-            <p>Multiplicación: <span id="mul-op1"></span> * <span id="mul-op2"></span> = 
-                <input type="number" id="mul-answer" onkeyup="checkAnswers()" onchange="checkAnswers()"></p>
-            <p>División: <span id="div-op1"></span> ÷ <span id="div-op2"></span> = 
-                <input type="number" id="div-answer" onkeyup="checkAnswers()" onchange="checkAnswers()"></p>
+    <div class="quiz-container">
+        <div class="timer">
+            <label for="time-left">Time Left</label>
+            <input type="text" id="time-left" readonly>
         </div>
-        <div id="timer">Tiempo restante: <span id="time-remaining"></span>s</div>
-        <div id="controls">
-            <button id="start-btn" onclick="start()">Start the Quiz</button>
-            <button id="giveup-btn" onclick="giveUp()" disabled>Give Up</button>
+        <div class="quiz">
+            <div class="question">
+                <span id="num1">?</span> + <span id="num2">?</span> = 
+                <input type="number" id="answer1">
+            </div>
+            <div class="question">
+                <span id="num3">?</span> - <span id="num4">?</span> = 
+                <input type="number" id="answer2">
+            </div>
+            <div class="question">
+                <span id="num5">?</span> × <span id="num6">?</span> = 
+                <input type="number" id="answer3">
+            </div>
+            <div class="question">
+                <span id="num7">?</span> ÷ <span id="num8">?</span> = 
+                <input type="number" id="answer4">
+            </div>
         </div>
-        <div id="message"></div>
+        <button id="start-quiz">Start the quiz</button>
     </div>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

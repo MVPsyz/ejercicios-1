@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goya</title>
+    <link href="/Ejercicios/ej31/style.css" rel="stylesheet">
+
+    <style>
+        /* color de fondo y tipo de letra*/
+        * {
+          background-color: ghostwhite; 
+          font-family: tahoma; 
+        }
+
+        /* letra grande para el texto*/
+        p{
+            font-size: large;
+        }
+
+        /* contenedor que lo engloba todo (cabecera, texto y pie) */
+        #contenedor {
+            /* El contenido de la web ocupará el 80% del ancho de la ventana*/
+            width: 80%;
+            /* centrar el contenedor */
+            margin: 0px auto;
+            /* Text alineado a la izquierda */
+            text-align: left;
+            
+        }
+
+        #cabecera {
+            /* Posición fijada */
+            position: fixed;
+            /* Posición de la cabecera: fijada arriba del todo */
+            top: 0;
+            /* Mides de la cabecera */
+            width: 80%;
+            height: 20%;
+            /* Si el texto sobrepasa la altura de la cabecera quedará oculto */
+            overflow: hidden;
+            /* imagen de fondo para la cabecera, la hacemos un poco transparente para mejorar la lectura del título */
+            background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),  url(../notebooks/images/goya.jpg);
+            /* que la imagen ocupe todo el espacio */
+            background-size: cover;
+            color: black
+        }
+
+        /* menú horizontal seguido a la cabecera */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow:visible;
+            position: fixed;
+            top: 20%;
+            width: 80%;
+        }
+    
+        li {
+            float: left;
+        }
+    
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: lightgrey;
+        }
+
+        
+        #cuerpo {
+            /* Posición fijada */
+            position: fixed;
+            /* Posición del cuerpo, coincide con la altura de la cabecera más el menú horizontal */
+            top: 25%;
+
+            margin-left: 0%;
+            padding-left: 1%;
+
+            /* Medidas del cuerpo */
+            width: 80%;
+            height: 62%;
+
+            /* Si el texto sobrepasa la altura del cuerpo de la web quedará oculto */
+            overflow: hidden;
+        }
+
+        /* simulación de marcos con css */
+        .pagina {
+            /* Los <div> de dentro el cuerpo ocupara toda la altura posible */
+            height: 100%;
+            /* Si el texto sobrepasa la altura del <div> aparecerá una barra de desplazamiento */
+            overflow: auto;
+        }
+
+        #pie {
+            /* Posición fijada*/
+            position: fixed;
+            /* Posición del pie de página */
+            top: 90%;
+            /* ancho del pie de página */
+            width: 80%;
+            /* Si el texto sobrepasa el pie de página quedará oculto */
+            overflow: hidden;
+        }
+
+        /* centrar la imagen del grabado */
+        .centrado {
+            display: block;
+            margin: auto;
+            left: 50%;
+          }
+
+        /* estilo del texto del título y subtítulo*/
+        h1, h2 {
+            text-align: center;
+            background-color: transparent;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="contenedor">
+        <div id="cabecera">
+            <h1 style="font-size:40px">Francisco de Goya</h1>
+            <h2 style="font-size:24px">El sueño de la razón produce monstruos</h2>
+        </div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#obra">Obra</a></li>
+            <li style="float:right"><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div id="cuerpo">
+            <div id="inicio" class="pagina" >
+                <h3>El sueño de la razón produce monstruos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum nemo et optio adipisci sapiente
+                    aperiam nisi velit voluptatem tempora. Numquam neque odit a doloribus modi illo ex itaque
+                    perferendis nulla.
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam id sunt ratione quaerat modi, dolorem voluptatum. Provident odit assumenda quod at, sapiente perspiciatis blanditiis illum voluptate, rem neque aliquam repellat? 
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam id sunt ratione quaerat modi, dolorem voluptatum. Provident odit assumenda quod at, sapiente perspiciatis blanditiis illum voluptate, rem neque aliquam repellat? 
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam id sunt ratione quaerat modi, dolorem voluptatum. Provident odit assumenda quod at, sapiente perspiciatis blanditiis illum voluptate, rem neque aliquam repellat? 
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam id sunt ratione quaerat modi, dolorem voluptatum. Provident odit assumenda quod at, sapiente perspiciatis blanditiis illum voluptate, rem neque aliquam repellat? 
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam id sunt ratione quaerat modi, dolorem voluptatum. Provident odit assumenda quod at, sapiente perspiciatis blanditiis illum voluptate, rem neque aliquam repellat? 
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam id sunt ratione quaerat modi, dolorem voluptatum. Provident odit assumenda quod at, sapiente perspiciatis blanditiis illum voluptate, rem neque aliquam repellat? 
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam id sunt ratione quaerat modi, dolorem voluptatum. Provident odit assumenda quod at, sapiente perspiciatis blanditiis illum voluptate, rem neque aliquam repellat? 
+
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum nemo et optio adipisci sapiente
+                    aperiam nisi velit voluptatem tempora. Numquam neque odit a doloribus modi illo ex itaque
+                    perferendis nulla.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum nemo et optio adipisci sapiente
+                    aperiam nisi velit voluptatem tempora. Numquam neque odit a doloribus modi illo ex itaque
+                    perferendis nulla.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum nemo et optio adipisci sapiente
+                        aperiam nisi velit voluptatem tempora. Numquam neque odit a doloribus modi illo ex itaque
+                        perferendis nulla.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum nemo et optio adipisci sapiente
+                        aperiam nisi velit voluptatem tempora. Numquam neque odit a doloribus modi illo ex itaque
+                        perferendis nulla.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum nemo et optio adipisci sapiente
+                        aperiam nisi velit voluptatem tempora. Numquam neque odit a doloribus modi illo ex itaque
+                        perferendis nulla.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum nemo et optio adipisci sapiente
+                            aperiam nisi velit voluptatem tempora. Numquam neque odit a doloribus modi illo ex itaque
+                            perferendis nulla.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum nemo et optio adipisci sapiente
+                            aperiam nisi velit voluptatem tempora. Numquam neque odit a doloribus modi illo ex itaque
+                            perferendis nulla.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum nemo et optio adipisci sapiente
+                            aperiam nisi velit voluptatem tempora. Numquam neque odit a doloribus modi illo ex itaque
+                            perferendis nulla.</p>
+            </div>
+            <div id="obra" style="width: 100%; height: 100%;">
+                <img style="height: 100%;" class="centrado"  src="/notebooks/images/goya-monstruos.jpg">
+            </div>
+            <div id="contacto" class="pagina" >
+                <h3>Contacto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dignissimos sunt impedit. Inventore,
+                    beatae quam? Deleniti vitae ipsa eius excepturi. Iusto optio quae a natus voluptas provident dolores
+                    autem itaque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dignissimos sunt impedit. Inventore,
+                    beatae quam? Deleniti vitae ipsa eius excepturi. Iusto optio quae a natus voluptas provident dolores
+                    autem itaque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dignissimos sunt impedit. Inventore,
+                    beatae quam? Deleniti vitae ipsa eius excepturi. Iusto optio quae a natus voluptas provident dolores
+                    autem itaque.</p>
+            </div>
+        </div>
+        <div id="pie">
+            <p style="text-align: right;">Francisco de Goya (Fuendetodos 1746 - Burdeos 1828)</p>
+        </div>
+    </div>
+</body>
+
+</html>

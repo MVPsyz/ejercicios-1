@@ -1,0 +1,87 @@
+
+* {
+    background-color: ghostwhite;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.cabecera {
+    position: fixed;  
+    top: 0px;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    text-align: center;
+    color: black;
+
+    background: 
+        linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5))
+        , url('/images/goya.jpg');
+
+}
+
+h1.cabecera{
+    background-color: transparent;
+    font-size: 40px;
+
+}
+
+h2.cabecera{
+    background-color: transparent;
+    font-size: 20px;
+
+}
+
+ul.menu{
+    position: fixed;
+    top: 180px;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+li.menuitem{
+    float: left;
+}
+
+li a.menu{
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+li a.menu:hover{
+    background-color: lightgray;
+}
+
+.columna{
+    float: left;
+    padding: 10px;
+}
+
+.columna.lado{
+    width: 30%;
+    text-align: justify;
+}
+
+.columna.central{
+    width: 40%;
+}
+
+.pie{
+    clear: both;
+    text-align: center;
+}
+
+@media (max-width:800px) {
+    .columna.columna.lado, .columna.central{
+        width: 100%;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expand</title>
+    <style>
+        .bloque{
+            border: 1px solid rgb(65, 65, 65);
+            border-radius: 8px;
+            box-shadow: 4px 4px 2px lightgrey;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .titulo{
+            background-color: lightgrey;
+            color: rgb(65, 65, 65);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            padding: 10px;
+            margin: 0;
+            border-radius: 8px;
+        }
+
+        .titulo:hover{
+            background-color: rgb(180,180,180);
+        }
+
+        .ocultar{
+            float: right;
+            border: 0px;
+            background-color: transparent;
+            padding: 5px 10px;
+            font-weight: border;
+            font-size: 16px;
+            color: rgb(65, 65, 65);
+        }
+
+        .panel{
+            display: none;
+            padding: 5px;
+        }
+
+        .centrado{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            min-width: 300px;
+            max-width: 800px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="bloque">
+        <p class="titulo">Diego Velázquez
+            <button class="ocultar" onclick="toggle(this)">+</button>
+        </p>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rem, nulla corporis vel deserunt nesciunt quas fugit illo ipsa earum, beatae tempore necessitatibus aspernatur cum maxime nostrum facilis, cumque molestiae.</p>
+            <div class="centrado">
+                <img style="width: 100%;" src="https://content3.cdnprado.net/imagenes/Documentos/imgsem/9f/9fdc/9fdc7800-9ade-48b0-ab8b-edee94ea877f/9267c90c-31a6-4eac-b0cc-e53edbb8ee00_832.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="bloque">
+        <p class="titulo">Francisco de Goya
+            <button class="ocultar" onclick="toggle(this)">+</button>
+        </p>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa iusto voluptates architecto, rerum, natus ad veritatis dolores cupiditate eius voluptas asperiores autem minus vitae magnam ipsam pariatur eaque impedit praesentium.</p>
+            <div class="centrado">
+                <img  style="width: 100%;"  src="https://static.wixstatic.com/media/4f9cbb_a6a5da8990184c199b590ac952486da9~mv2.jpg/v1/fit/w_1000%2Ch_919%2Cal_c%2Cq_80/file.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggle(btn, panelName) {
+
+            if(btn.innerText == "+"){
+                btn.innerText = "-";
+                btn.parentElement.nextElementSibling.style.display="block";
+                btn.parentElement.style.borderRadius="8px 8px 0px 0px";
+
+            } else {
+                btn.innerText = "+";
+                btn.parentElement.nextElementSibling.style.display="none";
+                btn.parentElement.style.borderRadius="8px";
+            }
+        }
+    </script>
+</body>
+</html>

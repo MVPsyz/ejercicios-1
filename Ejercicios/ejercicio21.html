@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posición de Bloques</title>
+    <style>
+         .bloque {
+        padding: 15px;
+        margin: 10px;
+        background-color: darkblue;
+        color: aqua;
+        width:80px;
+        text-align:center;
+    }
+        .bloquerelativo {
+        padding: 15px;
+        margin: 10px;
+        background-color: red;
+        color: yellow;
+        width:80px;
+        text-align:center;
+        position: relative;
+        left: 125px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bloque">Bloque 1</div>
+    <div class="bloquerelativo">Bloque 2</div>
+    <div class="bloque">Bloque 3</div>
+    <div class="bloquerelativo" style="top: 120px;">Bloque 4</div>
+    <div class="bloque">Bloque 5</div>
+
+</body>
+</html>

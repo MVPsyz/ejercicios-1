@@ -1,0 +1,8 @@
+table ,th, tr, td, caption{
+    border: 1px solid blue;
+
+
+}
+input{
+    margin: 5px;
+}

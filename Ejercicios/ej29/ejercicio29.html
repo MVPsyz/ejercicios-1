@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/fa/css/fontawesome.css" rel="stylesheet" >
+    <link href="/fa/css/brands.css" rel="stylesheet" >
+    <link href="/fa/css/solid.css" rel="stylesheet" >
+
+    <style>
+        body{
+            background-color: darkgray;
+        }
+        .image{
+            width: 400px;
+            border: 1px solid transparent;
+        }
+        .contenedor{
+            display: inline-block;
+            position: relative;
+        }
+        .icon{
+            color: white;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            visibility: hidden;
+        }
+        .image:hover{
+            background-color: white;
+        }
+        .contenedor:hover .icon{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <img class="image" src="/Ejercicios/Images/3demayo.jpeg" alt="" >
+        <i class="fa-solid fa-share icon"></i>
+    </div>
+</body>
+</html>

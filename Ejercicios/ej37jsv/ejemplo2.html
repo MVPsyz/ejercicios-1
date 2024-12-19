@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 2</title>
+    <script>
+        function toggle(btn, header) {
+            let h1 = document.getElementById(header);
+            console.log(h1.style.visibility);
+            if(h1.style.visibility=="hidden"){
+                h1.style.visibility = "visible"
+                btn.innerText = "Ocultar";
+            } else {
+                h1.style.visibility = "hidden";
+                btn.innerText = "Mostrar";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 id="cabecera">JavaScript</h1>
+    <button onclick="toggle(this, 'cabecera')">Ocultar</button>
+</body>
+</html>

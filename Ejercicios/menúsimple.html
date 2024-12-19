@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Desplegable</title>
+    <style>
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        ul { 
+            list-style: none; 
+            display: flex; 
+        }
+
+        li { 
+            position: relative; 
+        }
+
+        a { 
+            text-decoration: none; 
+            padding: 10px; 
+            display: block; 
+            background: #333; 
+            color: white; 
+        }
+        li:hover > ul { 
+            display: block; 
+        }
+
+        ul ul { 
+            display: none; 
+            position: absolute; 
+            top: 100%; 
+            left: 0;
+            background: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a>
+            <ul>
+                <li><a href="#">Consultoría</a></li>
+                <li><a href="#">Desarrollo Web</a></li>
+                <li><a href="#">SEO</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Sobre Nosotros</a>
+            <ul>
+                <li><a href="#">Quiénes Somos</a></li>
+                <li><a href="#">Historia</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+
+</body>
+</html>

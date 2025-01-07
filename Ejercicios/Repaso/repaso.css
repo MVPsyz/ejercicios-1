@@ -1,0 +1,10 @@
+h1 {
+    text-align: ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: blue;
+}
+
+h1:hover {
+    color: red;
+}

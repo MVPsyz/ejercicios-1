@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <link href="/fa/css/fontawesome.css" rel="stylesheet" />
+    <link href="/fa/css/brands.css" rel="stylesheet" />
+    <link href="/fa/css/solid.css" rel="stylesheet" />
+    
+    <style>
+        body{
+            background-color: darkgrey;
+        }
+
+        .acher {
+            width: 300px;
+            border: 1px solid transparent;
+
+        }
+
+        .contenedor{
+            display: inline-block;
+            position: relative;
+        }
+
+        .icon{
+            color: white;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            visibility: hidden;
+        }
+
+
+        .acher:hover{
+            background-color: white;
+        }
+
+        .contenedor:hover .icon
+        {
+            visibility: visible;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <img class="acher" src="/images/acher.jpg" alt="">
+        <i class="fa-solid fa-share icon"></i>
+    </div>
+</body>
+</html>

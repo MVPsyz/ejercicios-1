@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio Euros Pesetas</title>
+    <script>
+        const CAMBIO = 166.386;
+
+        function cambiar() {
+            let eur = Number(document.getElementById("euros").value);
+            if(eur<0){
+                document.getElementById("pesetas").innerText = "La cantidad no puede ser negativa";   
+            } else {
+                document.getElementById("pesetas").innerText = Math.round(eur * CAMBIO) + " pesetas"; 
+            }
+        }
+
+    </script>
+</head>
+<body>
+    Tus euros: <input type="number" name="euros" id="euros" onchange="cambiar()" onkeyup="cambiar()"> €
+    <br>
+    <p id="pesetas"></p>
+</body>
+</html>

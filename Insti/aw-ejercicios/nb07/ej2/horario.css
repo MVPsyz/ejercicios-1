@@ -1,0 +1,42 @@
+*{
+    background-color:rgb(252, 254, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div{
+    margin: 20px;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    font-size:medium;
+    font-weight: normal;
+}
+
+th,td{
+    border: 1px solid darkgrey;
+    padding: 8px;
+}
+
+th{
+    background-color: green;
+    color: white;
+}
+td{
+    color: darkgreen;
+}
+
+h2{
+    background-color: green;
+    color: white;
+    padding: 50px 30px;
+    font-weight: normal;
+    font-size: 32px;
+    box-shadow: 2px 3px rgba(0,0,0,0.2);
+}
+
+.recreo {
+    background-color: lightgreen;
+}

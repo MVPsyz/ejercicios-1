@@ -1,0 +1,42 @@
+*{
+    background-color: snow;
+}
+
+h1{
+    color: aqua;
+    background-color: black;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+    margin: 20px;
+    border: 1px dotted red ;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 3px 4px 12px rgba(0,0,0,0.5);
+}
+img {
+    margin: 20px;
+    width: 350px;
+    box-shadow: 3px 4px 12px rgba(0,0,0,0.5);
+}
+
+a{
+    color: crimson;
+    text-decoration: none;
+    border: 1px solid crimson;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+p.azul
+{
+    color: darkblue;
+    background-color: rgb(208, 237, 246);
+    margin: 20px;
+    border: 1px dotted blue ;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 3px 4px 12px rgba(0,0,255,0.5);
+}

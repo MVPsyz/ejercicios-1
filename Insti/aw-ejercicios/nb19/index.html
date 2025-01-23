@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios bucles anidados</title>
+    <style>
+        h1,h2 {
+            text-align: center;
+        }
+        .resp{
+            margin: 5px 25px 10px 0px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bucles Anidados</h1>
+    <h2>Ejercicios</h2>
+    <ol>
+        <li>Con bucles "dibuja" un triángulo decreciente, con la altura que indique el usuario. <br>
+            Por ejemplo, si el usuario dice que desea 4 caracteres de alto, el triángulo sería así: <br><br>
+            * * * * <br>
+            * * * <br>
+            * * <br>
+            * <br>
+            <br><br>
+            <input type="number" name="n1" id="n1">
+            <button onclick="triangulo()">Triángulo</button>
+            
+            <div class="resp" id="resp1"></div>
+        </li>
+        <li>Con bucles "dibuja" un triángulo creciente, con la altura que indique el usuario. <br>
+            Por ejemplo, si el usuario dice que desea 4 caracteres de alto, el triángulo sería así: <br><br>
+            * <br>
+            * * <br>
+            * * * <br>
+            * * * * <br>
+            <br><br>
+            <input type="number" name="n2" id="n2">
+            <button onclick="triangulo2()">Triángulo</button>
+            
+            <div class="resp" id="resp2"></div>
+        </li>
+    </ol>
+</body>
+<script src="scripts.js"></script>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            position: fixed;
+            list-style-type: none;
+            background-color: beige;
+            width: 100%;
+            top: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        li{
+            float: left;
+            border-right: 1px solid burlywood;
+        }
+
+        li a{
+            display: block;
+            padding: 14px 16px;
+            text-align: center;
+            text-decoration: none;
+            color: rgb(23, 23, 23);
+        }
+
+        li a:hover
+        {
+            background-color: burlywood;
+        }
+
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: beige;
+            z-index: 1;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content a{
+            border-top: 1px solid burlywood;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        
+        <li>
+            <div class="dropdown">
+                <a href="#tutorials">Tutorials</a>
+                <div class="dropdown-content">
+                    <a href="#html">HTML</a>
+                    <a href="#css">CSS</a>
+                    <a href="#javascript">JavaScript</a>
+                </div>
+            </div>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+        <li style="float: right;border-left: 1px solid burlywood;"><a href="#about">About</a></li>
+    </ul>
+    <div style="height: 200px; background-color: rgba(127, 255, 212, 0.2);"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eligendi quisquam incidunt maiores quibusdam deleniti quis rem praesentium numquam dolorem fugiat, eius aliquid repellendus nam non, officia doloribus iusto totam.</p>
+    <div style="height: 200px; background-color: rgba(127, 255, 212, 0.2);"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eligendi quisquam incidunt maiores quibusdam deleniti quis rem praesentium numquam dolorem fugiat, eius aliquid repellendus nam non, officia doloribus iusto totam.</p>
+    <div style="height: 200px; background-color: rgba(127, 255, 212, 0.2);"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eligendi quisquam incidunt maiores quibusdam deleniti quis rem praesentium numquam dolorem fugiat, eius aliquid repellendus nam non, officia doloribus iusto totam.</p>
+    <div style="height: 200px; background-color: rgba(127, 255, 212, 0.2);"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eligendi quisquam incidunt maiores quibusdam deleniti quis rem praesentium numquam dolorem fugiat, eius aliquid repellendus nam non, officia doloribus iusto totam.</p>
+    <div style="height: 200px; background-color: rgba(127, 255, 212, 0.2);"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eligendi quisquam incidunt maiores quibusdam deleniti quis rem praesentium numquam dolorem fugiat, eius aliquid repellendus nam non, officia doloribus iusto totam.</p>
+    <div style="height: 200px; background-color: rgba(127, 255, 212, 0.2);"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eligendi quisquam incidunt maiores quibusdam deleniti quis rem praesentium numquam dolorem fugiat, eius aliquid repellendus nam non, officia doloribus iusto totam.</p>
+    <div style="height: 200px; background-color: rgba(127, 255, 212, 0.2);"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eligendi quisquam incidunt maiores quibusdam deleniti quis rem praesentium numquam dolorem fugiat, eius aliquid repellendus nam non, officia doloribus iusto totam.</p>
+    <h1 id="home">Home</h1>
+</body>
+</html>

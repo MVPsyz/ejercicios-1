@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios bucle while</title>
+    <style>
+        h1,h2 {
+            text-align: center;
+        }
+        .resp{
+            margin: 5px 25px 10px 0px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Arrays y Bucles</h1>
+    <h2>Ejercicios</h2>
+    <ol>
+        <li>Muestra tantos números aleatorios entre 1 y 20 (ambos incluidos como indique el usuario).
+            <br><br>
+            <input type="number" name="number1" id="number1" min="1" max= "20" value="5">
+            <button onclick="ejercicio1()">Mostrar números</button><br><br>
+            <div class="resp" id="resp1"></div>
+        </li>
+        <li>Muestra tantos números aleatorios <b>sin repetición</b> entre 1 y 20 (ambos incluidos como indique el usuario). <br>
+            No puede aparecer el mismo número 2 veces.
+            <br><br>
+            <input type="number" name="number2" id="number2" min="1" max= "20" value="5">
+            <button onclick="ejercicio2()">Mostrar números</button><br><br>
+            <div class="resp" id="resp2"></div>
+        </li>
+        <li>Crea un array de números aleatorios entre 1 y 20. Cada array contendrá tantos números como indique el usuario.
+            <br>Muestra los números que se repiten en el array. 
+            <br>Ejemplo: [5,7,2,19,7,7,10,2] >>> 7,2
+            <br><br>
+            Tamaño del array: <input type="number" name="number3" id="number3" min="1" max= "20" value="5">
+            <button>Crear array</button><br><br>
+            <div class="resp" id="resp3"></div>
+        </li>
+        <li>Crea dos arrays de números aleatorios entre 1 y 20. Cada array contendrá tantos números como indique el usuario.
+            <br>
+            Muestra los dos arrays e indica si ambos arrays contienen los mismos números. 
+            <br><br>
+            Tamaño del array: <input type="number" name="number4" id="number4" min="1" max= "20" value="5">
+            <button>Crear arrays</button><br><br>
+            <div class="resp" id="resp4"></div>
+        </li>
+        <li>Crea dos arrays de números aleatorios entre 1 y 20. Cada array contendrá tantos números como indique el usuario.
+            <br>
+            Muestra los dos arrays.<br>Muestra también los números que aparecen en los dos arrays, es decir que están en el primer y en el segundo array. 
+            <br>Ejemplo: [1,2,3] y [3, 4, 5] >>> 3
+            <br><br>
+            Tamaño del array: <input type="number" name="number5" id="number5" min="1" max= "20" value="5">
+            <button>Crear arrays</button><br><br>
+            <div class="resp" id="resp5"></div>
+        </li>
+        <li>Crea dos arrays de números aleatorios entre 1 y 20. Cada array contendrá tantos números como indique el usuario.
+            <br>Muestra los dos arrays.
+            <br>Muestra también, sin repetirlos, los números distintos que aparecen entre los dos arrays. 
+            <br>Ejemplo: [1,2,3] y [3, 4, 5] >>> 1, 2, 3, 4, 5
+            <br><br>
+            Tamaño del array: <input type="number" name="number6" id="number6" min="1" max= "20" value="5">
+            <button>Crear arrays</button><br><br>
+            <div class="resp" id="resp6"></div>
+        </li>
+    </ol>
+</body>
+<script src="scripts.js"></script>
+</html>

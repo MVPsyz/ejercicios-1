@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dudas</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        ul{
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin: 0;
+            width: 100%;
+            background-color: lightgray;
+        }
+
+        li {
+            list-style-type: none;
+            background-color: lightgray;
+            float: left;
+            padding: 6px;
+        }
+
+        li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        li:hover{
+            background-color: darkgray;
+        }
+
+        .centrado{
+            display: block;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="#parrafo">Inicio</a></li>
+        <li><a href="/nb10/ejemplo1/index.html">Foto</a></li>
+        <li style="float: right; margin-right:5px;"><a href="">Acerca de</a></li>
+    </ul>
+    <p style="margin-top: 40px; scroll-margin-top: 40px;" id="parrafo">Inicio</p>
+    <img class="centrado" style="width: 180px;" src="https://aplicaciones.aragon.es/sigaddweb/fondo-educacion.ddccd664f750279943fe.jpg" alt="" srcset="">
+</body>
+</html>

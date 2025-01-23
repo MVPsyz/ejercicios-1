@@ -1,0 +1,26 @@
+p.a{
+    text-align: center;
+    padding: 12px;
+    border: 5px dotted;
+}
+
+p.b{
+    text-align: center;
+    padding: 12px;
+    border: 5px solid;
+    border-color:aqua greenyellow skyblue yellow;
+}
+
+p.c{
+    text-align: center;
+    padding: 12px;
+    border: 5px solid;
+    border-radius: 0px 20px;
+}
+
+p.d{
+    text-align: center;
+    padding: 12px;
+    border: 5px solid tomato;
+    border-top: none;
+}

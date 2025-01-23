@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios bucle while</title>
+    <style>
+        h1,h2 {
+            text-align: center;
+        }
+        .resp{
+            margin: 5px 25px 10px 0px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bucle <em>while</em></h1>
+    <h2>Ejercicios</h2>
+    <ol>
+        <li>Muestra los números del 10 al 20.
+            <br><br>
+            <button onclick="ejercicio1()">Mostrar números</button><br><br>
+            <div class="resp" id="resp1"></div>
+        </li>
+        <li>Muestra los números pares del 2 al 20.
+            <br><br>
+            <button onclick="ejercicio2()">Pares</button><br><br>
+            <div class="resp" id="resp2"></div>
+        </li>
+        <li>Crea una función muestre la tabla de multiplicar del número introducido al hacer click en el botón.
+            <br><br>
+            <input type="number" name="number3" id="number3">
+            <button onclick="ejercicio3()">Tabla de multiplicar</button><br><br>
+            <div class="resp" id="resp3"></div>
+        </li>
+        <li>Repite el ejercicio anterior pero mostrando la tabla de multiplicar en una tabla html. <br>
+            <em>Aprende a añadir filas a una tabla con JavaScript en</em> <a href="https://www.w3schools.com/jsref/met_table_insertrow.asp">w3 schools</a>
+            <br><br>
+            <input type="number" name="number4" id="number4">
+            <button onclick="ejercicio4()">Tabla de multiplicar</button><br><br>
+            <table id="tablaMultiplicar"></table>
+        </li>
+    </ol>
+</body>
+<script src="scripts.js"></script>
+</html>

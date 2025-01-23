@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table id="calculadora">
+        <tr>
+            <td>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Casio_logo.svg/2560px-Casio_logo.svg.png" alt="" width="100px">
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>Número 1</td>
+            <td>Número 2</td>
+        </tr>
+        <tr>
+            <td><input class="derecha" type="number" name="n1" id="n1" minlength="4" maxlength="8" size="8" value="0"></td>
+            <td><input class="derecha" type="number" name="n2" id="n2" minlength="4" maxlength="8" size="8" value="0"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><p id="resultado">0</p></td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="calc('suma')" >+</button>
+                <button onclick="calc('resta')">-</button>
+                <button onclick="calc('producto')">x</button>
+                <button onclick="calc('division')">/</button>
+            </td>
+            <td>
+                <button onclick="limpiar()">Limpiar</button>
+                <button onclick="limpiarTodo()">Limpiar todo</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Operaciones realizadas:</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td id="realizadas"></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+<script src="scripts.js"></script>
+</html>

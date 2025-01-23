@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="/fa/css/fontawesome.css" rel="stylesheet" />
+    <link href="/fa/css/brands.css" rel="stylesheet" />
+    <link href="/fa/css/solid.css" rel="stylesheet" />
+</head>
+<body>
+    <p>Tiempo restante: <span id="restante"></span></p>
+    <br><br>
+    <p>
+        <span id="s1">?</span> + <span id="s2">?</span> = <span id="suma">?</span>
+        <input type="number" name="respSuma" id="respSuma" onkeyup="checkAnswers()" onchange="checkAnswers()">
+        <i id="sumaOk" class="fa-solid fa-check icon" style="color: green;display: none;" ></i>
+        <i id="sumaKo" class="fa-solid fa-xmark icon" style="color: red;display: none;"></i>
+
+    </p>
+    <p>
+        <span id="r1">?</span> - <span id="r2">?</span> = <span id="resta">?</span>
+        <input type="number" name="respResta" id="respResta" onkeyup="checkAnswers()" onchange="checkAnswers()">
+        <i id="restaOk" class="fa-solid fa-check icon" style="color: green; display: none;" ></i>
+        <i id="restaKo" class="fa-solid fa-xmark icon" style="color: red;display: none;"></i>
+    </p>
+    <br><br>
+    <button id="inicio" onclick="start()">Start quiz</button>
+    <button id="abandonar" onclick="giveUp()">Give up</button>
+    <p id="fin"></p>
+    <br><br>
+    <p id="registro"></p>
+    <script src="mathquiz.js"></script>
+</body>
+</html>

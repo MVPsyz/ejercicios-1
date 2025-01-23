@@ -1,0 +1,29 @@
+body{
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20231016/pngtree-blank-wooden-tabletop-showcasing-beautiful-wood-texture-image_13622756.png");
+}
+
+#calculadora{
+    background-color: lightgrey;
+    margin: 80px;
+    padding: 20px;
+    box-shadow: 2px 2px black;
+}
+
+#resultado{
+    background-color: white;
+    text-align: left;
+    font-size: larger;
+    text-align: right;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+tr{
+    height: 30px;
+}
+
+.derecha{
+    text-align: right;
+}
+

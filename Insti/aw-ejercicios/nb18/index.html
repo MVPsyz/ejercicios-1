@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios bucles</title>
+    <style>
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        .resp {
+            margin: 5px 25px 10px 0px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bucles <em>do while</em> y <em>for</em></h1>
+    <h2>Ejercicios</h2>
+    <ol>
+        <li>Muestra los números del -10 al 10 con los bucles <em>do while</em> y <em>for</em>.
+            <br><br>
+            <button onclick="ejercicio1_do()">do while</button>
+            <button onclick="ejercicio1_for()">for</button><br><br>
+            <div class="resp" id="resp1"></div>
+        </li>
+        <li>Muestra los números del 10 al 0 (descendiendo) con los bucles <em>do while</em> y <em>for</em>.
+            <br><br>
+            <button onclick="ejercicio2_do()"">do while</button>
+            <button onclick="ejercicio2_for()">for</button><br><br>
+            <div class="resp" id="resp2"></div>
+        </li>
+        <li>Muestra los números múltiplos de 3 mayores que 0 y menores que 20. Muestra también la suma de dichos
+            números.
+            <br><br>
+            <button onclick="ejercicio3()">Ejercicio 3</button><br><br>
+            <div class="resp" id="resp3"></div>
+        </li>
+        <li>Muestra la multiplicación de los dos números introducidos calculada como sumas sucesivas; hay que sumar el
+            primer número tantas veces como valga el segundo.
+            <br>
+            Ejemplo: 3 x 4 = 3 + 3 + 3 + 3
+            <br><br>
+            <input type="number" name="n1" id="n1">
+            <input type="number" name="n2" id="n2">
+            <button onclick="ejercicio4()">Ejercicio 4</button><br><br>
+            <div class="resp" id="resp4"></div>
+        </li>
+        <li>Muestra 5 números aleatorios entre 0 y 99 ambos incluidos. <br>
+            Calcula el máximo, el mín la suma y la media de los números aparecidos.
+            <br><br>
+            <button onclick="ejercicio5()">Ejercicio 5</button><br><br>
+            <div class="resp" id="resp5"></div>
+        </li>
+        <li>Muestra el abecedario inglés.
+            <br><br>
+            <button onclick="ejercicio6()">Abecedario</button><br><br>
+            <div class="resp" id="resp6"></div>
+        </li>
+        <li>Muestra 10 letras mayúsculas (del abecedario inglés) de forma aleatoria. Cuenta cuántas vocales y cuántas
+            consonantes han salido.
+            <br><br>
+            <button onclick="ejercicio7()">Ejercicio 7</button><br><br>
+            <div class="resp" id="resp7"></div>
+        </li>
+    </ol>
+</body>
+<script src="scripts.js"></script>
+
+</html>
